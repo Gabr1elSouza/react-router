@@ -12,6 +12,8 @@ import Info from "./pages/Info";
 //components
 import Navbar from "./components/Navbar";
 import NotFound from "./pages/NotFound";
+import { SearchForm } from "./components/SearchForm";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -19,12 +21,14 @@ function App() {
       <h1>React Router</h1>
       <BrowserRouter>
         <Navbar />
+        <SearchForm />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products/:id" element={<Product />} />
           {/*nested route */}
           <Route path="/products/:id/info" element={<Info />} />
+          <Route path="/search" element={<Search />} />
           {/*No match route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
