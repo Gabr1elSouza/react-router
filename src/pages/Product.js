@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 
 function Product() {
@@ -20,6 +20,8 @@ function Product() {
         <div>
           <h1>{product.name}</h1>
           <p>R${product.price}</p>
+          {/*nested router*/}
+          <Link to={`/products/${product.id}/info`}>Mais informações</Link>
         </div>
       )}
     </>
