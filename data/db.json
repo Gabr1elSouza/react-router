@@ -14,6 +14,16 @@
       "id": "3",
       "name": "Teclado",
       "price": 150
+    },
+    {
+      "id": "4",
+      "name": "Mouse",
+      "price": 160
+    },
+    {
+      "id": "5",
+      "name": "MousePad",
+      "price": 30
     }
   ]
 }

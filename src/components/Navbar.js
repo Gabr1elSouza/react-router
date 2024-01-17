@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
